@@ -24,9 +24,11 @@
     }
 
     .attribution {
-      bottom: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
       font-size: 11px;
-      position: fixed;
     }
 
     .attribution a {
@@ -34,7 +36,7 @@
     }
 
     .title {
-      font-size: 30px;
+      font-size: 15px;
       font-weight: bold;
       text-align: center;
       color: hsl(218, 44%, 22%);
@@ -43,12 +45,12 @@
 
     .info-text {
       color: hsl(240, 1%, 72%);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Outfit', sans-serif;
       text-align: center;
     }
 
-    .white-container {
+    main{
       background-color: white;
       width: 400px;
       height: 600px;
@@ -59,35 +61,37 @@
       padding: 30px;
     }
 
-    .white-container img {
+    main img {
       align-self: center;
       border-radius: 20px;
       width: 400px;
+      margin-bottom: -20px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="white-container">
-    <img src="./images/image-qr-code.png">
+  <main>
+    <img src="./images/image-qr-code.png" alt="QR-code">
     <br>
     <div class="title">
-      Improve your front-end <br> skills by building projects
+      <h1>Improve your front-end <br> skills by building projects</h1>
     </div>
-  
-    <div class="info-text">
-      Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br> to the next level
-    </div>
-    
-    <br>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
-      Coded by <a href="#">Emma</a>.
-    </div>
-  </div>
-  
 
+    <div class="info-text">
+      <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br> to the next level</p>
+    </div>
+
+    <br>
+    <footer>
+      <div class="attribution">
+        <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+        </p>
+        <p>Coded by <a href="#">Emma</a>.</p>
+      </div>
+    </footer>
+  </main>
 </body>
 
 </html>
